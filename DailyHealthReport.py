@@ -3,8 +3,7 @@ from selenium.webdriver.common.keys import Keys
 options = webdriver.ChromeOptions()
 # options.headless = True     #for the code to run in the background without opening a window.
 options.add_argument("--enable-javascript")
-chromedriver = '/Users/ainaqistinataha/Documents/Personal/projects/chromedriver'
-browser = webdriver.Chrome(chromedriver, options=options)
+browser = webdriver.Chrome(executable_path= os.environ.get("CHROMEDRIVER_PATH"), options=options)
 # browser.get('https://login.microsoftonline.com/common/oauth2/authorize?client_id=c9a559d2-7aab-4f13-a6ed-e7e9c52aec87&resource=c9a559d2-7aab-4f13-a6ed-e7e9c52aec87&response_type=code%20id_token&scope=openid%20profile&state=OpenIdConnect.AuthenticationProperties%3DeyJ2ZXJzaW9uIjoxLCJkYXRhIjp7IklkZW50aXR5UHJvdmlkZXIiOiJBWXl1cjI1bGVvZWM2VG0tRDFHSUZUQ0tSQl9WclZNa1diVDh0MkUyWVlDRWxiNUpTRFNGdkZZOW11YVFYcXhtZFFKRDVHMFZUbEVIOGdZYkNQLUpaLTdCT2pxbERIc29EblVLczJvcWhBY184OHlOeEdTTEQtRWJ2bmxIb2dzTU53IiwiLnJlZGlyZWN0IjoiLyJ9fQ&response_mode=form_post&nonce=637929506899509872.NjA3ZmVlODYtZjhlYi00MWFlLTg2ZDAtNDEyNTIzYTM2NjhmODQ1NGQ3Y2ItOWNhZi00Y2NjLThhMTktNGM4MTE5YmQ4Y2Rl&redirect_uri=https%3A%2F%2Fforms.office.com%2Flanding&x-client-SKU=ID_NET472&x-client-ver=6.15.1.0')
 
 # from selenium.webdriver.common.action_chains import ActionChains
