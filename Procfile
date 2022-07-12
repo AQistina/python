@@ -1,1 +1,2 @@
-worker: DailyHealthReport.py
+web: python DailyHealthReport.py
+worker: python DailyHealthReport.py
